@@ -2,7 +2,7 @@
 #add easter egg key words that go to new set of answers
 require "pry"
 @answer = ['Yes', 'No', 'Ask me later', 'Go for it','haha..not on your life', 'thats a dumb question', 'unclear', 'I have my doubts', 'forget about it', 'who cares']
-@easter_egg = ['die', 'death', 'me']
+@easter_egg = ['die', 'me']
 @answer_again = @answer.clone
 
 
@@ -12,7 +12,7 @@ def question
   array = @question.split(' ')
     @easter_egg.length.times do |i|
     if array.include?(@easter_egg[i])
-      puts "Aww, shut up no one cares!"
+      puts "You're so focused on yourself. No one cares."
       question
     else
       the_answer
